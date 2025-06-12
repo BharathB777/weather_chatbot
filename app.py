@@ -1,10 +1,11 @@
+import os
 from flask import Flask, request
 import requests
 
 app = Flask(__name__)
 
-# Your OpenWeatherMap API key
-API_KEY = "62a7efa862edc1c03e49d032122f978c"
+# Load API key from environment variable
+API_KEY = os.getenv("API_KEY")
 
 # Tamil Nadu and Pondicherry District Coordinates
 district_coords = {
@@ -54,6 +55,6 @@ def webhook():
 def home():
     return "✅ Weather WhatsApp Bot is live."
 
-# Start server
+# Start server (only for local testing, not used on Render)
 if __name__ == "__main__":
     app.run(port=5000)
