@@ -41,8 +41,8 @@ district_coords = {
 }
 
 radars = {
-    "1": "https://mausam.imd.gov.in/Radar/chennai.gif",
-    "2": "https://mausam.imd.gov.in/Radar/karaikal.gif"
+    "1": "https://mausam.imd.gov.in/responsive/radar.php?id=Chennai",
+    "2": "https://mausam.imd.gov.in/responsive/radar.php?id=Karaikal"
 }
 
 def get_weather(lat, lon):
